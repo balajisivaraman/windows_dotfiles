@@ -24,6 +24,10 @@ return
     MyScratchPadFn("Thunderbird", "thunderbird")
 return
 
+^#e::
+    Run, "C:\Users\balaj\scripts\emacs.vbs"
+return
+
 #Enter::
     Run, alacritty
 return
