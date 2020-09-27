@@ -19,7 +19,7 @@ SetKeyDelay, 75
 mapDesktopsFromRegistry()
 OutputDebug, [loading] desktops: %DesktopCount% current: %CurrentDesktop%
 
-#Include %A_ScriptDir%\user_config.ahk
+#Include %A_ScriptDir%\windows-desktop-switcher\user_config.ahk
 return
 
 ;

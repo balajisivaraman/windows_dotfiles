@@ -21,44 +21,109 @@
 ; === END OF INSTRUCTIONS ===
 ; ===========================
 
-CapsLock & 1::switchDesktopByNumber(1)
-CapsLock & 2::switchDesktopByNumber(2)
-CapsLock & 3::switchDesktopByNumber(3)
-CapsLock & 4::switchDesktopByNumber(4)
-CapsLock & 5::switchDesktopByNumber(5)
-CapsLock & 6::switchDesktopByNumber(6)
-CapsLock & 7::switchDesktopByNumber(7)
-CapsLock & 8::switchDesktopByNumber(8)
-CapsLock & 9::switchDesktopByNumber(9)
+/ & 1::
+\ & 1::
+    switchDesktopByNumber(1)
+return
+/ & 2::
+\ & 2::
+    switchDesktopByNumber(2)
+return
+/ & 3::
+\ & 3::
+    switchDesktopByNumber(3)
+return
+/ & 4::
+\ & 4::
+    switchDesktopByNumber(4)
+return
+/ & 5::
+\ & 5::
+    switchDesktopByNumber(5)
+return
+/ & 6::
+\ & 6::
+    switchDesktopByNumber(6)
+return
+/ & 7::
+\ & 7::
+    switchDesktopByNumber(7)
+return
+/ & 8::
+\ & 8::
+    switchDesktopByNumber(8)
+return
+/ & 9::
+\ & 9::
+    switchDesktopByNumber(9)
+return
 
-CapsLock & Numpad1::switchDesktopByNumber(1)
-CapsLock & Numpad2::switchDesktopByNumber(2)
-CapsLock & Numpad3::switchDesktopByNumber(3)
-CapsLock & Numpad4::switchDesktopByNumber(4)
-CapsLock & Numpad5::switchDesktopByNumber(5)
-CapsLock & Numpad6::switchDesktopByNumber(6)
-CapsLock & Numpad7::switchDesktopByNumber(7)
-CapsLock & Numpad8::switchDesktopByNumber(8)
-CapsLock & Numpad9::switchDesktopByNumber(9)
+/ & Right::
+\ & Right::
+    switchDesktopToRight()
+return
+/ & Left::
+\ & Left::
+    switchDesktopToLeft()
+return
+/ & s::
+\ & s::
+    switchDesktopToRight()
+return
+/ & a::
+\ & a::
+    switchDesktopToLeft()
+return
+/ & Tab::
+\ & Tab::
+    switchDesktopToLastOpened()
+return
 
-CapsLock & n::switchDesktopToRight()
-CapsLock & p::switchDesktopToLeft()
-CapsLock & s::switchDesktopToRight()
-CapsLock & a::switchDesktopToLeft()
-CapsLock & tab::switchDesktopToLastOpened()
+/ & c::
+\ & c::
+    createVirtualDesktop()
+return
+/ & d::
+\ & d::
+    deleteVirtualDesktop()
+return
 
-CapsLock & c::createVirtualDesktop()
-CapsLock & d::deleteVirtualDesktop()
-
-CapsLock & q::MoveCurrentWindowToDesktop(1)
-CapsLock & w::MoveCurrentWindowToDesktop(2)
-CapsLock & e::MoveCurrentWindowToDesktop(3)
-CapsLock & r::MoveCurrentWindowToDesktop(4)
-CapsLock & t::MoveCurrentWindowToDesktop(5)
-CapsLock & y::MoveCurrentWindowToDesktop(6)
-CapsLock & u::MoveCurrentWindowToDesktop(7)
-CapsLock & i::MoveCurrentWindowToDesktop(8)
-CapsLock & o::MoveCurrentWindowToDesktop(9)
+/ & q::
+\ & q::
+    MoveCurrentWindowToDesktop(1)
+return
+/ & w::
+\ & w::
+    MoveCurrentWindowToDesktop(2)
+return
+; / & e::
+; \ & e::
+;     MoveCurrentWindowToDesktop(3)
+; return
+/ & r::
+\ & r::
+    MoveCurrentWindowToDesktop(4)
+return
+; / & t::
+; \ & t::
+;     MoveCurrentWindowToDesktop(5)
+; return
+/ & y::
+\ & y::
+    MoveCurrentWindowToDesktop(6)
+return
+/ & u::
+\ & u::
+    MoveCurrentWindowToDesktop(7)
+return
+/ & i::
+\ & i::
+    MoveCurrentWindowToDesktop(8)
+return
+/ & o::
+\ & o::
+    MoveCurrentWindowToDesktop(9)
+return
 
 ; === INSTRUCTIONS ===
 ; Below is the alternate key configuration. Delete symbol ; in the beginning of the line to enable. 
