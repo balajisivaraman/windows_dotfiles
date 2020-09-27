@@ -60,3 +60,9 @@ return
 / & Enter::
     Run, alacritty
 return
+
+#BackSpace::
+/ & BackSpace::
+\ & BackSpace::
+    WinClose A
+return
