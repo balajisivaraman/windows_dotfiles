@@ -4,9 +4,11 @@
 /Contacts
 /Cookies
 /Desktop
+/.docker
 /Documents
 /Downloads
 /Favorites
+/IntelGraphicsProfiles
 /Links
 /Local Settings
 /MicrosoftEdgeBackups
@@ -15,6 +17,7 @@
 /NetHood
 /NTUSER*
 /ntuser*
+/Nextcloud
 /OneDrive
 /Pictures
 /PrintHood
@@ -26,5 +29,6 @@
 /Start Menu
 /Templates
 /.vscode
+/.vscode-oss
 /Videos
 /wr-capture*
