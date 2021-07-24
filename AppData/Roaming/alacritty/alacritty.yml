@@ -91,7 +91,7 @@ font:
     #   - (macOS) Menlo
     #   - (Linux) monospace
     #   - (Windows) Consolas
-    family: 'Inconsolata Nerd Font Mono'
+    family: 'Iosevka Custom'
 
     # The `style` can be specified to pick a specific face.
     style: Regular
@@ -102,7 +102,7 @@ font:
     #
     # If the bold family is not specified, it will fall back to the
     # value specified for the normal font.
-    family: 'Inconsolata Nerd Font Mono'
+    family: 'Iosevka Custom'
 
     # The `style` can be specified to pick a specific face.
     style: Bold
@@ -113,13 +113,13 @@ font:
     #
     # If the italic family is not specified, it will fall back to the
     # value specified for the normal font.
-    family: 'Inconsolata Nerd Font Mono'
+    family: 'Iosevka Custom'
 
     # The `style` can be specified to pick a specific face.
     style: Italic
 
   # Point size
-  size: 14.0
+  size: 13.0
 
   # Offset is the extra space around each character. `offset.y` can be thought of
   # as modifying the line spacing, and `offset.x` as modifying the letter spacing.
@@ -153,34 +153,39 @@ font:
 # If `true`, bold text is drawn using the bright color variants.
 draw_bold_text_with_bright_colors: true
 
-# Colors (One Dark)
+# Colors (Tempus Totus)
 colors:
-  # Default colors
   primary:
-    background: '0x1e2127'
-    foreground: '0xabb2bf'
-
-  # Normal colors
-  normal:
-    black:   '0x1e2127'
-    red:     '0xe06c75'
-    green:   '0x98c379'
-    yellow:  '0xd19a66'
-    blue:    '0x61afef'
-    magenta: '0xc678dd'
-    cyan:    '0x56b6c2'
-    white:   '0xabb2bf'
-
-  # Bright colors
+    background:        '#ffffff'
+    foreground:        '#4a484d'
+    bright_foreground: '#5e4b4f'
+  cursor:
+    text:   CellBackground
+    cursor: CellForeground
+  vi_mode_cursor:
+    text:   CellBackground
+    cursor: CellForeground
+  selection:
+    text:       CellBackground
+    background: CellForeground
   bright:
-    black:   '0x5c6370'
-    red:     '0xe06c75'
-    green:   '0x98c379'
-    yellow:  '0xd19a66'
-    blue:    '0x61afef'
-    magenta: '0xc678dd'
-    cyan:    '0x56b6c2'
-    white:   '0xffffff'
+    black:   '#5e4b4f'
+    red:     '#992030'
+    green:   '#4a5500'
+    yellow:  '#8a3600'
+    blue:    '#2d45b0'
+    magenta: '#700dc9'
+    cyan:    '#005289'
+    white:   '#ffffff'
+  normal:
+    black:   '#4a484d'
+    red:     '#a50000'
+    green:   '#005d26'
+    yellow:  '#714700'
+    blue:    '#1d3ccf'
+    magenta: '#88267a'
+    cyan:    '#185570'
+    white:   '#efefef'
 
   # Indexed Colors
   #
@@ -222,7 +227,7 @@ bell:
 #
 # Window opacity as a floating point number from `0.0` to `1.0`.
 # The value `0.0` is completely transparent and `1.0` is opaque.
-background_opacity: 0.9
+background_opacity: 1.0
 
 # Mouse bindings
 #
@@ -253,28 +258,6 @@ mouse:
 
   # If this is `true`, the cursor is temporarily hidden when typing.
   hide_when_typing: false
-
-  url:
-    # URL launcher
-    #
-    # This program is executed when clicking on a text which is recognized as a URL.
-    # The URL is always added to the command as the last parameter.
-    #
-    # When set to `None`, URL launching will be disabled completely.
-    #
-    # Default:
-    #   - (macOS) open
-    #   - (Linux) xdg-open
-    #   - (Windows) explorer
-    #launcher:
-    #  program: xdg-open
-    #  args: []
-
-    # URL modifiers
-    #
-    # These are the modifiers that need to be held down for opening URLs when clicking
-    # on them. The available modifiers are documented in the key binding section.
-    modifiers: None
 
 selection:
   semantic_escape_chars: ",│`|:\"' ()[]{}<>"
